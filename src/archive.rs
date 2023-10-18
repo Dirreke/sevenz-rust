@@ -74,7 +74,7 @@ pub struct SevenZArchiveEntry {
     pub size: u64,
     pub compressed_size: u64,
     // pub(crate) content_methods: LinkedList<SevenZMethodConfiguration>,
-    pub(crate) content_methods: Arc<Vec<SevenZMethodConfiguration>>,
+    pub content_methods: Arc<Vec<SevenZMethodConfiguration>>,
 }
 
 impl SevenZArchiveEntry {
